@@ -33,11 +33,13 @@ int main() {
 
 	scanf_s("%d %d %d %d %d", &r, &c, &rr, &rc, &d);
 
+	//동적 배열 할당
 	int** matrix = (int**)malloc(sizeof(int*)*r);
 	for (int i = 0; i < r; i++) {
 		matrix[i] = (int*)malloc(sizeof(int)*c);
 	}
 
+	//입력값 할당
 	for (int i = 0; i < r; i++) {
 		for (int j = 0; j < c; j++) {
 			int input;
@@ -83,6 +85,7 @@ int main() {
 					break;
 				}
 				count++; matrix[rr][rc] = CLEAN;//청소한다
+				//printf("(%d, %d) 청소 함\n", rr, rc);
 				break;
 			}
 			else {
