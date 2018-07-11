@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "로봇 청소기", "로봇 청소기\로봇 청소기.vcxproj", "{A1B2264A-F3FD-432E-A894-3F476A83A779}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "로봇", "로봇\로봇.vcxproj", "{E5851E83-3976-45CA-BB12-9287489A9C89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{A1B2264A-F3FD-432E-A894-3F476A83A779}.Release|x64.Build.0 = Release|x64
 		{A1B2264A-F3FD-432E-A894-3F476A83A779}.Release|x86.ActiveCfg = Release|Win32
 		{A1B2264A-F3FD-432E-A894-3F476A83A779}.Release|x86.Build.0 = Release|Win32
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Debug|x64.ActiveCfg = Debug|x64
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Debug|x64.Build.0 = Debug|x64
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Debug|x86.ActiveCfg = Debug|Win32
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Debug|x86.Build.0 = Debug|Win32
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Release|x64.ActiveCfg = Release|x64
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Release|x64.Build.0 = Release|x64
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Release|x86.ActiveCfg = Release|Win32
+		{E5851E83-3976-45CA-BB12-9287489A9C89}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
