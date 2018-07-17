@@ -26,33 +26,42 @@ int main() {
 		cin >> tempInput;
 		log[j] = new Node();
 		Node* ptr = log[j];
-		for (int i = 0; i < MAX_INPUT_LENGTH; i++) {
-			Node* prev;
+		for (int i = 0; i < MAX_INPUT_LENGTH && tempInput[i] != NULL; i++) {
 			if (tempInput[i] == '-') {
-				prev = ptr->prev->prev;
-				delete ptr;
-				ptr = prev;
-				ptr->next = NULL;
-				if (tempInput[i + 1] == NULL) break;
-				ptr->next = new Node();
-				Node* newPtr = ptr->next;
-				newPtr->prev = ptr;
-				ptr = newPtr;
-			}else if (tempInput[i] == '<' && ptr->prev) {
-				if (tempInput[i + 1] == NULL) break;
-				ptr->next = new Node();
-				Node* newPtr = ptr->next;
-				newPtr->prev = ptr;
-				ptr = newPtr;
+				if (ptr->next) {
+					ptr->next->prev = ptr->prev;
+					ptr->prev->next = ptr->next;
+					Node* prev = ptr->prev;
+					delete ptr;
+					ptr = prev;
+				}else{
+					ptr = ptr->prev;
+					delete ptr->next;
+					ptr->next = NULL;
+				}
+			}else if (tempInput[i] == '<') {
+				if(ptr->prev)
+					ptr = ptr->prev;
 			}else if (tempInput[i] == '>') {
-
+				if (ptr->next)
+					ptr = ptr->next;
 			}else {
+				if (ptr->ch != NULL) {//헤드가 아닐 때만 새 노드 생성
+					if (ptr->next){//노드 오른쪽에 삽입
+						Node* newNode = new Node();
+						newNode->prev = ptr;
+						newNode->next = ptr->next;
+						ptr->next->prev = newNode;
+						ptr->next = newNode;
+						ptr = newNode;
+					}else{//맨끝에 추가
+						ptr->next = new Node();
+						Node* prev = ptr;
+						ptr = ptr->next;
+						ptr->prev = prev;
+					}
+				}
 				ptr->ch = tempInput[i];
-				if (tempInput[i + 1] == NULL) break;
-				ptr->next = new Node();
-				Node* newPtr = ptr->next;
-				newPtr->prev = ptr;
-				ptr = newPtr;
 			}
 		}
 	}
