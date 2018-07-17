@@ -28,7 +28,7 @@ int main() {
 		Node* ptr = log[j];
 		for (int i = 0; i < MAX_INPUT_LENGTH && tempInput[i] != NULL; i++) {
 			if (tempInput[i] == '-') {
-				if (ptr->next) {
+				if (ptr->next) { //뒤에 노드가 있으면
 					ptr->next->prev = ptr->prev;
 					ptr->prev->next = ptr->next;
 					Node* prev = ptr->prev;
