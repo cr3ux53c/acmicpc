@@ -1,7 +1,7 @@
 //https://www.acmicpc.net/problem/2580
 
 #include <iostream>
-#include <stack>
+#include <vector>
 
 using namespace std;
 
@@ -11,15 +11,14 @@ const int BITMASK[] = { 0, 1, 2, 4, 8, 16, 32, 64, 128, 256 };
 
 class POINT {
 public:
-	int* candidate;
+	vector<int> candidates;
 	int x, y;
 	POINT(int y, int x) {
 		this->x = x; this->y = y;
-		candidate = NULL;
+		candidates = vector<int>(1);
 	}
 	POINT() {
 		this->x = -1; this->y = -1;
-		candidate = NULL;
 	}
 };
 
@@ -29,13 +28,20 @@ unsigned int* getNumbersInSmallSquare(int const matrix[9][9], POINT *p);
 int* getCandidates(unsigned int c[], unsigned int v[], unsigned int s[]);
 
 int matrix[9][9];
-int candidate[9];
 POINT emptyPositions[81];
+
+100000000
+010000000 |
+
+110000000
+100000000 &
+
+100000000
+
 
 
 int main() {
 	//입력
-	
 	int input, count = 0;
 	for (int i = 0; i < 9; i++)
 		for (int j = 0; j < 9; j++) {
@@ -45,15 +51,28 @@ int main() {
 				emptyPositions[count].x = j;
 				emptyPositions[count++].y = i;
 			}
-
 		}
 
+	//비어있는 자리에 후보군 선정
 	for (int i = 0; i < count; i++) {
 		POINT p(emptyPositions[i].y, emptyPositions[i].x);
-		emptyPositions[i].candidate = getCandidates(getNumbers(matrix, &p, true), getNumbers(matrix, &p, false), getNumbersInSmallSquare(matrix, &p));
+		int* numbers = getCandidates(getNumbers(matrix, &p, true), getNumbers(matrix, &p, false), getNumbersInSmallSquare(matrix, &p));
+		for (int j = 0; numbers[j] != NULL; j++) {
+			emptyPositions[i].candidates.push_back(numbers[j]);
+		}
 	}
 
+	//핵심 알고리즘
+	for (int j = 0; j < count; j++) {
+		if (emptyPositions[j].candidates.size() == 1) {
+			matrix[emptyPositions[j].y][emptyPositions[j].x] = emptyPositions[j].candidates[0];
+			emptyPositions[j].candidates.clear();
+		}
+	}
+
+
 	//출력
+	cout << endl << endl;
 	for (int i = 0; i < 9; i++) {
 		for (int j = 0; j < 9; j++) {
 			cout << matrix[i][j];

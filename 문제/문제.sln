@@ -9,7 +9,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "로봇", "로봇\로봇.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "키로거", "키로거\키로거.vcxproj", "{28124B63-48E3-4DF5-A73B-6A769C4BB611}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스도쿠", "스도쿠\스도쿠.vcxproj", "{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스도쿠 (보류)", "스도쿠\스도쿠.vcxproj", "{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택 사용하기 (기초)", "스택 사용하기 (기초)\스택 사용하기 (기초).vcxproj", "{F0A1B627-CD06-4BE7-A359-70E861669FFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}.Release|x64.Build.0 = Release|x64
 		{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}.Release|x86.ActiveCfg = Release|Win32
 		{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}.Release|x86.Build.0 = Release|Win32
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Debug|x64.ActiveCfg = Debug|x64
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Debug|x64.Build.0 = Debug|x64
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Debug|x86.Build.0 = Debug|Win32
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Release|x64.ActiveCfg = Release|x64
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Release|x64.Build.0 = Release|x64
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Release|x86.ActiveCfg = Release|Win32
+		{F0A1B627-CD06-4BE7-A359-70E861669FFA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
