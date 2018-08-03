@@ -5,6 +5,8 @@
 #include <stack>
 using namespace std;
 
+enum {NO, YES};
+
 int main() {
 	int inputSize = 0;
 	cin >> inputSize;
@@ -32,15 +34,15 @@ int main() {
 			}
 		}
 		if (!ps.empty()) {
-			output[++outputSp] = 0;
+			output[++outputSp] = NO;
 		}else {
-			output[++outputSp] = 1;
+			output[++outputSp] = YES;
 		}
 	}
 
 	//Ãâ·Â
 	for (int i = 0; i <= outputSp; i++) {
-		if (output[i] == 1) {
+		if (output[i] == YES) {
 			cout << "YES" << endl;
 		}else {
 			cout << "NO" << endl;
