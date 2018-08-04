@@ -42,18 +42,12 @@ int main() {
 					stak.push(2);
 				} else { //numbers
 					int sum = 0;
-					while (!stak.empty()) {
-						switch (stak.top()) {
-						case SMALL_OPEN:
-							break;
-						case BIG_OPEN:
-							throw - 1;
-						default:
-							sum += stak.top();
-							stak.pop();
-						}
+					if (stak.empty()) throw - 1;
+					while (stak.top() != SMALL_OPEN) {
+						if (stak.top() == BIG_OPEN) throw -1;
+						sum += stak.top();
+						stak.pop();
 					}
-
 					stak.pop();
 					stak.push(sum * 2);
 				}
