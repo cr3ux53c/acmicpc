@@ -1,39 +1,40 @@
 //https://www.acmicpc.net/problem/1874
 
 #include <iostream>
-#include <stack>
 using namespace std;
 
-stack<int> st;
+//stack<int> st;
+int st[100000];
+int index, sp;
 
 int main(){
 	int length;
 
-	int index = 0;
-	st.push(index++);
+	//st.push(index++);
+	st[sp] = index++; sp++;
 	cin >> length;
 
 	for (int i = 0; i < length; i++) {
 		int input;
 		cin >> input; // 1 <= X <= length
 
-		if (st.top() == input) {
-			st.pop();
+		if (st[sp-1] == input) {
+			sp--;
 			cout << '-' << endl;
-		} else if (st.top() < input) {
+		} else if (st[sp - 1] < input) {
 			if (index > input) {
 				cout << "NO";
 				return 0;
 			}
-			while (st.top() < input) {
-				st.push(index++);
+			while (st[sp - 1] < input) {
+				st[sp] = index++; sp++;
 				cout << '+' << endl;
 			}
-			st.pop();
+			sp--;
 			cout << '-' << endl;
 		} else {
-			while (st.top() >= input) {
-				st.pop();
+			while (st[sp - 1] >= input) {
+				sp--;
 				cout << '-' << endl;
 			}
 		}
