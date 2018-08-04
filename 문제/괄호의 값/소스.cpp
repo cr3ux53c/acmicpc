@@ -15,10 +15,31 @@ using namespace std;
 
 enum {SMALL_OPEN = -1, BIG_OPEN = -2};
 
+void Check(stack<int> *stak, int OPEN) {
+	int sum = 0;
+	while (!stak->empty()) { // 차있을 때 동안
+		if (stak->top() == OPEN) {
+			stak->pop();
+			if (sum == 0)
+				stak->push(OPEN == SMALL_OPEN ? 2 : 3);
+			else
+				stak->push(sum * (OPEN == SMALL_OPEN ? 2 : 3));
+			break;
+		}
+		else if (stak->top() == (OPEN == SMALL_OPEN ? BIG_OPEN : SMALL_OPEN)) {
+			throw - 1;
+		}
+		else {
+			sum += stak->top();
+			stak->pop();
+		}
+	}
+	if (stak->empty()) throw - 1;
+}
+
 int main() {
 	string inputCommand;
 	getline(cin, inputCommand);
-	
 	stack<int> stak;
 
 	if (inputCommand.size() < 2) {
@@ -36,51 +57,15 @@ int main() {
 				stak.push(BIG_OPEN);
 				break;
 			case ')':
-				if (stak.empty()) throw - 1;
-				if (stak.top() == SMALL_OPEN) {
-					stak.pop();
-					stak.push(2);
-				} else { //numbers
-					int sum = 0;
-					while (!stak.empty()) {
-						switch (stak.top()) {
-						case SMALL_OPEN:
-							break;
-						case BIG_OPEN:
-							throw - 1;
-						default:
-							sum += stak.top();
-							stak.pop();
-						}
-					}
-
-					stak.pop();
-					stak.push(sum * 2);
-				}
+				Check(&stak, SMALL_OPEN);
 				break;
 			case ']':
-				if (stak.empty()) throw - 1;
-				if (stak.top() == BIG_OPEN) {
-					stak.pop();
-					stak.push(3);
-				}
-				else { //numbers
-					int sum = 0;
-					if (stak.empty()) throw - 1;
-					while (stak.top() != BIG_OPEN) {
-						if (stak.top() == SMALL_OPEN) throw -1;
-						sum += stak.top();
-						stak.pop();
-					}
-					stak.pop();
-					stak.push(sum * 3);
-				}
-				break;
+				Check(&stak, BIG_OPEN);
 				break;
 			default:
 				throw -1;
 			}
-		} catch (int e) {
+		} catch (int e) { //ERROR
 			cout << 0;
 			return 0;
 		}
