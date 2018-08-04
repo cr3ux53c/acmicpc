@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호의 값", "괄호의 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택 수열", "스택 수열\스택 수열.vcxproj", "{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x64.Build.0 = Release|x64
 		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x86.ActiveCfg = Release|Win32
 		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x86.Build.0 = Release|Win32
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x64.ActiveCfg = Debug|x64
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x64.Build.0 = Debug|x64
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x86.ActiveCfg = Debug|Win32
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x86.Build.0 = Debug|Win32
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Release|x64.ActiveCfg = Release|x64
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Release|x64.Build.0 = Release|x64
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Release|x86.ActiveCfg = Release|Win32
+		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,20 @@
 //https://www.acmicpc.net/problem/9012
+/*
+13
+)(()
+())(
+(())())(
+(())())
+())
+(((((()((()))))))
+(((()((()))))))
+((
+)()
+))
+)))
+))))
+)))))
+*/
 
 #include <iostream>
 #include <string>
@@ -19,24 +35,24 @@ int main() {
 
 	for (int i = 0; i < inputSize; i++) {
 		getline(cin, inputCommand);
-		stack<int> ps;
+		stack<bool> ps;
 
 		for (int i = 0; i < inputCommand.size(); i++) {
-			switch (inputCommand.c_str()[i]) {
-			case '(':
+			if (inputCommand.c_str()[i] == '(') {
 				ps.push(0);
-				break;
-			case ')':
-				if (!ps.empty())
-					ps.pop();
-				else
+			} else {
+				if (ps.empty()) {
 					ps.push(0);
+					break;
+				} else {
+					ps.pop();
+				}
 			}
 		}
-		if (!ps.empty()) {
-			output[++outputSp] = NO;
-		}else {
+		if (ps.empty()) {
 			output[++outputSp] = YES;
+		}else {
+			output[++outputSp] = NO;
 		}
 	}
 
