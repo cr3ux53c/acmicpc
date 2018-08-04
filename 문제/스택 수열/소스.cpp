@@ -1,43 +1,43 @@
+//https://www.acmicpc.net/problem/1874
+
 #include <iostream>
 #include <stack>
-#include <vector>
 using namespace std;
 
-int g_buffer[100000];
+stack<int> st;
 
 int main(){
-	stack<int> st;
-	vector<char> output;
-	
 	int length;
-	cin >> length;
-	
 
-	for (int i = 0; i < length; i++) { //	8	|	4	3	6	8	7	5	2	1
-		//cin >> g_buffer[i];
+	int index = 0;
+	st.push(index++);
+	cin >> length;
+
+	for (int i = 0; i < length; i++) {
 		int input;
 		cin >> input; // 1 <= X <= length
 
-		if (st.size()+1 == input) {
+		if (st.top() == input) {
 			st.pop();
-			output.push_back('-');
-		} else if (st.size() < input) {
-			while (st.size() < input) {
-				st.push(st.size() + 1);
-				output.push_back('+');
+			cout << '-' << endl;
+		} else if (st.top() < input) {
+			if (index > input) {
+				cout << "NO";
+				return 0;
+			}
+			while (st.top() < input) {
+				st.push(index++);
+				cout << '+' << endl;
 			}
 			st.pop();
-			output.push_back('-');
+			cout << '-' << endl;
 		} else {
-
+			while (st.top() >= input) {
+				st.pop();
+				cout << '-' << endl;
+			}
 		}
 	}
-
-	//output
-	for (int i = 0; i < output.size(); i++) {
-		cout << output[i];
-	}
-
 
 	return 0;
 }
