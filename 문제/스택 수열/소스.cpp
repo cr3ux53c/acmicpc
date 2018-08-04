@@ -1,43 +1,48 @@
 //https://www.acmicpc.net/problem/1874
 
 #include <iostream>
+#include <stack>
+#include <vector>
 using namespace std;
 
-//stack<int> st;
-int st[100000];
-int index, sp;
-
-int main(){
+int main() {
 	int length;
+	stack<int> st;
+	vector<char> output;
 
-	//st.push(index++);
-	st[sp] = index++; sp++;
+	int index = 0;
+	st.push(index++);
 	cin >> length;
 
 	for (int i = 0; i < length; i++) {
 		int input;
 		cin >> input; // 1 <= X <= length
 
-		if (st[sp-1] == input) {
-			sp--;
-			cout << '-' << endl;
-		} else if (st[sp - 1] < input) {
+		if (st.top() == input) {
+			st.pop();
+			output.push_back('-');
+		} else if (st.top() < input) {
 			if (index > input) {
 				cout << "NO";
 				return 0;
 			}
-			while (st[sp - 1] < input) {
-				st[sp] = index++; sp++;
-				cout << '+' << endl;
+			while (st.top() < input) {
+				st.push(index++);
+				output.push_back('+');
 			}
-			sp--;
-			cout << '-' << endl;
+			st.pop();
+			output.push_back('-');
 		} else {
-			while (st[sp - 1] >= input) {
-				sp--;
-				cout << '-' << endl;
+			while (st.top() >= input) {
+				st.pop();
+				output.push_back('-');
 			}
 		}
+	}
+
+	//output
+	for (int i = 0; i < output.size(); i++) {
+		cout << output[i] << '\n';
 	}
 
 	return 0;
