@@ -39,12 +39,10 @@ public:
 };
 
 int main() {
-	//ют╥б
 	int inputSize = 0;
 	cin >> inputSize;
 	cin.ignore();
 	string inputCommand;
-
 	MyStack mystack(inputSize);
 
 	for (int i = 0; i < inputSize; i++) {
