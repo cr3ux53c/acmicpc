@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class MyStack {
@@ -47,9 +48,8 @@ int main() {
 
 	MyStack mystack(inputSize);
 
-	//출력용 배열
-	int *output = new int[inputSize];
-	int outputSp = -1;
+	//출력 버퍼
+	vector<int> output;
 
 	for (int i = 0; i < inputSize; i++) {
 		getline(cin, inputCommand);
@@ -57,21 +57,21 @@ int main() {
 			mystack.push(atoi(inputCommand.c_str() + 5));
 		}
 		if (inputCommand.compare(0, 3, "top") == 0) {
-			output[++outputSp] = mystack.top();
+			output.push_back(mystack.top());
 		}
 		if (inputCommand.compare(0, 4, "size") == 0) {
-			output[++outputSp] = mystack.size();
+			output.push_back(mystack.size());
 		}
 		if (inputCommand.compare(0, 5, "empty") == 0) {
-			output[++outputSp] = mystack.empty();
+			output.push_back(mystack.empty());
 		}
 		if (inputCommand.compare(0, 3, "pop") == 0) {
-			output[++outputSp] = mystack.pop();
+			output.push_back(mystack.pop());
 		}
 	}
 
 	//출력
-	for (int i = 0; i <= outputSp; i++) {
+	for (int i = 0; i < output.size(); i++) {
 		cout << output[i] << endl;
 	}
 
