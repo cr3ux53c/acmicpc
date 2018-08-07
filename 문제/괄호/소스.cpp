@@ -19,6 +19,7 @@
 #include <iostream>
 #include <string>
 #include <stack>
+#include <vector>
 using namespace std;
 
 enum {NO, YES};
@@ -27,43 +28,30 @@ int main() {
 	int inputSize = 0;
 	cin >> inputSize;
 	cin.ignore();
-	string inputCommand;
-
-	//출력용 배열
-	int *output = new int[inputSize];
-	int outputSp = -1;
+	string inputString;
+	vector<int> output;
 
 	for (int i = 0; i < inputSize; i++) {
-		getline(cin, inputCommand);
+		getline(cin, inputString);
 		stack<bool> ps;
 
-		for (int i = 0; i < inputCommand.size(); i++) {
-			if (inputCommand.c_str()[i] == '(') {
+		for (int i = 0; i < inputString.size(); i++) {
+			if (inputString.c_str()[i] == '(') {
 				ps.push(0);
 			} else {
 				if (ps.empty()) {
-					ps.push(0);
+					ps.push(0); // 루프 뒤에서 NO 만들기 위해
 					break;
 				} else {
 					ps.pop();
 				}
 			}
 		}
-		if (ps.empty()) {
-			output[++outputSp] = YES;
-		}else {
-			output[++outputSp] = NO;
-		}
+		output.push_back((ps.empty() == true) ? YES : NO);
 	}
 
-	//출력
-	for (int i = 0; i <= outputSp; i++) {
-		if (output[i] == YES) {
-			cout << "YES" << endl;
-		}else {
-			cout << "NO" << endl;
-		}
-	}
-
+	//output
+	for (int i : output) cout << ((i == YES) ? "YES\n" : "NO\n");
+	
 	return 0;
 }
