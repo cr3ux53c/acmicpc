@@ -16,7 +16,7 @@ using namespace std;
 enum {SMALL_OPEN = -1, BIG_OPEN = -2};
 
 void Check(stack<int> *stak, int OPEN) {
-	int sum = 0;
+	int sum = 0; //   (()[[]])([])
 	while (!stak->empty()) { // 차있을 때 동안
 		if (stak->top() == OPEN) { //짝이 맞는 괄호일 때
 			stak->pop();
@@ -35,7 +35,6 @@ void Check(stack<int> *stak, int OPEN) {
 			stak->pop();
 		}
 	}
-	if (stak->empty()) throw - 1;
 }
 
 int main() {
@@ -64,7 +63,7 @@ int main() {
 				Check(&stak, BIG_OPEN);
 				break;
 			default:
-				throw -1;
+				//throw -1;
 			}
 		} catch (int e) { //ERROR
 			cout << 0;
