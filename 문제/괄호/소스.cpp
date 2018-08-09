@@ -38,7 +38,7 @@ int main() {
 		for (int i = 0; i < inputString.size(); i++) {
 			if (inputString.c_str()[i] == '(') {
 				ps.push(0);
-			} else {
+			} else { // )
 				if (ps.empty()) {
 					ps.push(0); // 루프 뒤에서 NO 만들기 위해
 					break;

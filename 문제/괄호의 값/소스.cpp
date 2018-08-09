@@ -18,18 +18,19 @@ enum {SMALL_OPEN = -1, BIG_OPEN = -2};
 void Check(stack<int> *stak, int OPEN) {
 	int sum = 0;
 	while (!stak->empty()) { // 차있을 때 동안
-		if (stak->top() == OPEN) {
+		if (stak->top() == OPEN) { //짝이 맞는 괄호일 때
 			stak->pop();
 			if (sum == 0)
 				stak->push(OPEN == SMALL_OPEN ? 2 : 3);
 			else
 				stak->push(sum * (OPEN == SMALL_OPEN ? 2 : 3));
+
 			break;
 		}
-		else if (stak->top() == (OPEN == SMALL_OPEN ? BIG_OPEN : SMALL_OPEN)) {
+		else if (stak->top() == (OPEN == SMALL_OPEN ? BIG_OPEN : SMALL_OPEN)) { //짝이 맞지 않는 괄호일 때
 			throw - 1;
 		}
-		else {
+		else { //숫자일 경우
 			sum += stak->top();
 			stak->pop();
 		}
@@ -47,9 +48,9 @@ int main() {
 		return 0;
 	}
 
-	for (int i = 0; i < inputString.size(); i++) {
+	for (char i : inputString) {
 		try{
-			switch (inputString[i]) {
+			switch (i) {
 			case '(':
 				stak.push(SMALL_OPEN);
 				break;
