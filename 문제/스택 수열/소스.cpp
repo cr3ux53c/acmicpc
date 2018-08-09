@@ -41,9 +41,7 @@ int main() {
 	}
 
 	//output
-	for (int i = 0; i < output.size(); i++) {
-		cout << output[i] << '\n';
-	}
+	for (int i : output) cout << i << '\n';
 
 	return 0;
 }

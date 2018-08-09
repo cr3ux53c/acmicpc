@@ -38,18 +38,18 @@ void Check(stack<int> *stak, int OPEN) {
 }
 
 int main() {
-	string inputCommand;
-	getline(cin, inputCommand);
+	string inputString;
+	getline(cin, inputString);
 	stack<int> stak;
 
-	if (inputCommand.size() < 2) {
+	if (inputString.size() < 2) {
 		cout << 0;
 		return 0;
 	}
 
-	for (int i = 0; i < inputCommand.size(); i++) {
+	for (int i = 0; i < inputString.size(); i++) {
 		try{
-			switch (inputCommand[i]) {
+			switch (inputString[i]) {
 			case '(':
 				stak.push(SMALL_OPEN);
 				break;
