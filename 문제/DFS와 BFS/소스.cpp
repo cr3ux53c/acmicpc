@@ -15,8 +15,7 @@ vector<bool> discovered;
 void dfs(vector<int> *result, int here) {
 	result->push_back(here);
 	visited[here] = true;
-	list<int>::iterator it;
-	for (it = adjacentList[here].begin(); it != adjacentList[here].end(); it++) {
+	for (auto it = adjacentList[here].begin(); it != adjacentList[here].end(); it++) {
 		int there = *it;
 		if (!visited[there]) {
 			dfs(result, there);
@@ -45,13 +44,12 @@ void dfsIterative(vector<int> *result, int s) {
 vector<int> bfs(int start) {
 	queue<int> q;
 	vector<int> order;
-	list<int>::iterator it;
 	discovered[start] = true;
 	q.push(start);
 	while (!q.empty()) {
 		int here = q.front(); q.pop();
 		order.push_back(here);
-		for (it = adjacentList[here].begin(); it != adjacentList[here].end(); it++) {
+		for (auto it = adjacentList[here].begin(); it != adjacentList[here].end(); it++) {
 			int there = *it;
 			if (!discovered[there]) {
 				q.push(there);
