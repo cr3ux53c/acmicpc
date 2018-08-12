@@ -4,6 +4,7 @@
 #include <vector>
 #include <list>
 #include <queue>
+#include <stack>
 using namespace std;
 
 int n, m, v;
@@ -19,6 +20,24 @@ void dfs(vector<int> *result, int here) {
 		int there = *it;
 		if (!visited[there]) {
 			dfs(result, there);
+		}
+	}
+}
+
+void dfsIterative(vector<int> *result, int s) {
+	stack<int> st;
+	st.push(s);
+	while (!st.empty()) {
+		s = st.top(); st.pop();
+		if (visited[s]) {
+			continue;
+		}
+		visited[s] = true;
+		result->push_back(s);
+		for (auto it = adjacentList[s].rbegin(); it != adjacentList[s].rend(); it++) {
+			if (!visited[*it]) {
+				st.push(*it);
+			}
 		}
 	}
 }
@@ -72,7 +91,7 @@ int main() {
 	//calc
 	vector<int> dfsResult;
 	dfs(&dfsResult, v);
-
+	//dfsIterative(&dfsResult, v);
 	vector<int> bfsResult = bfs(v);
 
 	//output
