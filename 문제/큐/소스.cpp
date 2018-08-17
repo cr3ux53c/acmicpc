@@ -3,16 +3,16 @@
 #include <vector>
 using namespace std;
 
-class MyQueue {
+class MyDeque {
 	int *queue;
 	int fp;
 	int bp;
 public:
-	MyQueue(int size) {
+	MyDeque(int size) {
 		queue = new int[size];
 		fp = 0; bp = -1;
 	}
-	~MyQueue() {
+	~MyDeque() {
 		delete queue;
 	}
 	void push(int x) {
@@ -41,7 +41,7 @@ int main() {
 	cin.ignore();
 	string inputCmd;
 
-	MyQueue myQueue(inputCases);
+	MyDeque myQueue(inputCases);
 	vector<int> output;
 
 	for (int i = 0; i < inputCases;i++) {
