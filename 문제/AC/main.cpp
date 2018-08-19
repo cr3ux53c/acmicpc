@@ -36,7 +36,7 @@ int main() {
 	for (int i = 0; i < t; i++) {
 		bool isError = false;
 		deque<string> d;
-		
+
 		//input
 		string cmd;
 		cin >> cmd;
@@ -44,7 +44,7 @@ int main() {
 		cin >> n;
 		string arr;
 		cin >> arr;
-		
+
 		//input array
 		vector<string> res = MyStrTok(arr, "[,]");
 		for (string s : res) {
@@ -56,7 +56,7 @@ int main() {
 		int beginIndex = 0;
 		int endIndex = d.size();
 		bool isReverse = false;
-		for (char ch : cmd) { 
+		for (char ch : cmd) {
 			if (ch == 'R') {
 				isReverse = !isReverse;
 			} else { // D
@@ -67,8 +67,7 @@ int main() {
 					} else {
 						beginIndex++;
 					}
-				}
-				else {
+				} else {
 					isError = true;
 					break;
 				}
@@ -79,21 +78,27 @@ int main() {
 
 		//output
 		if (isError) {
-			cout << "error" << '\n';
+			result.push_back("error");
 		} else {
-			cout << '[';
-			int begin = isReverse ? endIndex-1 : beginIndex;
-			int end = isReverse ? beginIndex-1 : endIndex;
-			int flag = isReverse ? -1:1;
+			stringstream ss;
+			ss << '[';
+			int begin = isReverse ? endIndex - 1 : beginIndex;
+			int end = isReverse ? beginIndex - 1 : endIndex;
+			int flag = isReverse ? -1 : 1;
 			if (begin == end) {
-				cout << ']' << '\n';
+				ss << ']';
 			} else {
-				for (int i = begin; i != end; i+=flag) {
-					cout << d[i];
-					(i == end + (isReverse ? 1 : -1)) ? cout << ']' << '\n' : cout << ',';
+				for (int i = begin; i != end; i += flag) {
+					ss << d[i];
+					(i == end + (isReverse ? 1 : -1)) ? ss << ']' : ss << ',';
 				}
 			}
+			result.push_back(ss.str());
 		}
 	}
+
+	for (string s : result)
+		cout << s << '\n';
+
 	return 0;
 }
