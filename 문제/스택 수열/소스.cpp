@@ -41,7 +41,7 @@ int main() {
 	}
 
 	//output
-	for (int i : output) cout << i << '\n';
+	for (char i : output) cout << i << '\n';
 
 	return 0;
 }
