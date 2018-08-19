@@ -79,27 +79,21 @@ int main() {
 
 		//output
 		if (isError) {
-			result.push_back("error");
+			cout << "error" << '\n';
 		} else {
-			stringstream ss;
-			ss << '[';
+			cout << '[';
 			int begin = isReverse ? endIndex-1 : beginIndex;
 			int end = isReverse ? beginIndex-1 : endIndex;
 			int flag = isReverse ? -1:1;
 			if (begin == end) {
-				ss << ']';
+				cout << ']' << '\n';
 			} else {
 				for (int i = begin; i != end; i+=flag) {
-					ss << d[i];
-					(i == end + (isReverse ? 1 : -1)) ? ss << ']' : ss << ',';
+					cout << d[i];
+					(i == end + (isReverse ? 1 : -1)) ? cout << ']' << '\n' : cout << ',';
 				}
 			}
-			result.push_back(ss.str());
 		}
 	}
-
-	for (string s : result)
-		cout << s << '\n';
-
 	return 0;
 }
