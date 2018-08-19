@@ -5,13 +5,9 @@
 using namespace std;
 
 int main() {
-	string s;
-	string a = "fa";
-	s.push_back('[');
-	s.push_back('1');
-	s.push_back('a');
-	s.push_back(a[0]);
-	cout << s;
-
+	std::stringstream ss;
+	ss << "my data " << 42;
+	std::string myString(ss.str());
+	cout << myString;
 	return 0;
 }

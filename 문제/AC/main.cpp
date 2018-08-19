@@ -38,8 +38,8 @@ int main() {
 		deque<string> d;
 
 		//input
-		string cmd;
-		cin >> cmd;
+		string commands;
+		cin >> commands;
 		int n;
 		cin >> n;
 		string arr;
@@ -51,12 +51,12 @@ int main() {
 			d.push_back(s);
 		}
 
-		//run cmds
+		//run commands
 		int countOfD = 0;
 		int beginIndex = 0;
 		int endIndex = d.size();
 		bool isReverse = false;
-		for (char ch : cmd) {
+		for (char ch : commands) {
 			if (ch == 'R') {
 				isReverse = !isReverse;
 			} else { // D
@@ -76,7 +76,7 @@ int main() {
 
 		if (countOfD > d.size()) isError = true;
 
-		//output
+		//output to buffer
 		if (isError) {
 			result.push_back("error");
 		} else {
@@ -84,10 +84,10 @@ int main() {
 			ss << '[';
 			int begin = isReverse ? endIndex - 1 : beginIndex;
 			int end = isReverse ? beginIndex - 1 : endIndex;
-			int flag = isReverse ? -1 : 1;
-			if (begin == end) {
+			int flag = isReverse ? -1 : 1; // R에 따라 달라지는 인덱스 증감치
+			if (begin == end) { //덱이 비어있을 경우
 				ss << ']';
-			} else {
+			} else { // 지정된 범위의 덱 순회
 				for (int i = begin; i != end; i += flag) {
 					ss << d[i];
 					(i == end + (isReverse ? 1 : -1)) ? ss << ']' : ss << ',';
@@ -97,8 +97,8 @@ int main() {
 		}
 	}
 
-	for (string s : result)
-		cout << s << '\n';
-
+	//output
+	for (auto s : result) cout << s << '\n';
+	
 	return 0;
 }
