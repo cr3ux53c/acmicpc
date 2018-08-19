@@ -1,9 +1,17 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <sstream>
 using namespace std;
 
 int main() {
-	cout << floor(5 / 2.0 + 0.5);
-	cout << floor(4 / 2.0 + 0.5);
+	string s;
+	string a = "fa";
+	s.push_back('[');
+	s.push_back('1');
+	s.push_back('a');
+	s.push_back(a[0]);
+	cout << s;
+
 	return 0;
 }
