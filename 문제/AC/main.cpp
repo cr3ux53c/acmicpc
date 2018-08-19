@@ -25,6 +25,7 @@ vector<string> MyStrTok(string src, string delimeter) {
 }
 
 int main() {
+	//ios_base::sync_with_stdio(false); cin.tie(NULL);
 	int t;
 	cin >> t;
 	vector<string> result;
@@ -32,7 +33,7 @@ int main() {
 	//testCases
 	for (int i = 0; i < t; i++) {
 		bool isError = false;
-		deque<int> d;
+		deque<string> d;
 		//input
 		string cmd;
 		cin >> cmd;
@@ -44,37 +45,57 @@ int main() {
 		//input array
 		vector<string> res = MyStrTok(arr, "[,]");
 		for (string s : res) {
-			d.push_back(atoi(s.c_str()));
+			d.push_back(s);
 		}
 
 		//run cmds
+		int countOfD = 0;
+		int beginIndex = 0;
+		int endIndex = d.size()-1;
 		bool isReverse = false;
 		for (char ch : cmd) { 
 			if (ch == 'R') {
 				isReverse = !isReverse;
-				if (isReverse)
-					sort(d.rbegin(), d.rend());
-				else
-					sort(d.begin(), d.end());
-			} else { //D
-				if (!d.empty())
-					d.pop_front();
+			} else { // D
+				countOfD++;
+				if (!d.empty()) {
+					if (isReverse) {
+						endIndex--;
+					} else {
+						beginIndex++;
+					}
+				}
 				else {
 					isError = true;
+					break;
 				}
 			}
 		}
 
+		if (countOfD > d.size()) isError = true;
+
 		//output
 		if (isError) {
-			cout << "error\n";
+			result.push_back("error");
 		} else {
-			cout << '[';
-			for (int i = 0; i < d.size(); i++) {
-				cout << d[i];
-				(i == d.size() - 1) ? cout << ']' : cout << ',';
+			string s;
+			s.push_back('[');
+			
+			int begin = isReverse ? endIndex : beginIndex;
+			int end = isReverse ? beginIndex : endIndex;
+			end += isReverse ? -1 : 1;
+			int flag = isReverse ? -1:1;
+
+			for (int i = begin; i != end; i+=flag) {
+				s.push_back(d[i][0]);
+				(i == end + (isReverse ? 1 : -1)) ? s.push_back(']') : s.push_back(',');
 			}
+			result.push_back(s);
 		}
 	}
+
+	for (string s : result)
+		cout << s << '\n';
+
 	return 0;
 }
