@@ -25,7 +25,9 @@ vector<string> MyStrTok(string src, string delimeter) {
 }
 
 int main() {
-	//ios_base::sync_with_stdio(false); cin.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+
 	int t;
 	cin >> t;
 	vector<string> result;
@@ -34,6 +36,7 @@ int main() {
 	for (int i = 0; i < t; i++) {
 		bool isError = false;
 		deque<string> d;
+		
 		//input
 		string cmd;
 		cin >> cmd;
@@ -51,7 +54,7 @@ int main() {
 		//run cmds
 		int countOfD = 0;
 		int beginIndex = 0;
-		int endIndex = d.size()-1;
+		int endIndex = d.size();
 		bool isReverse = false;
 		for (char ch : cmd) { 
 			if (ch == 'R') {
@@ -78,19 +81,20 @@ int main() {
 		if (isError) {
 			result.push_back("error");
 		} else {
-			string s;
-			s.push_back('[');
-			
-			int begin = isReverse ? endIndex : beginIndex;
-			int end = isReverse ? beginIndex : endIndex;
-			end += isReverse ? -1 : 1;
+			stringstream ss;
+			ss << '[';
+			int begin = isReverse ? endIndex-1 : beginIndex;
+			int end = isReverse ? beginIndex-1 : endIndex;
 			int flag = isReverse ? -1:1;
-
-			for (int i = begin; i != end; i+=flag) {
-				s.push_back(d[i][0]);
-				(i == end + (isReverse ? 1 : -1)) ? s.push_back(']') : s.push_back(',');
+			if (begin == end) {
+				ss << ']';
+			} else {
+				for (int i = begin; i != end; i+=flag) {
+					ss << d[i];
+					(i == end + (isReverse ? 1 : -1)) ? ss << ']' : ss << ',';
+				}
 			}
-			result.push_back(s);
+			result.push_back(ss.str());
 		}
 	}
 
