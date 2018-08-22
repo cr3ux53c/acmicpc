@@ -1,4 +1,5 @@
 //https://www.acmicpc.net/problem/2748
+//https://www.acmicpc.net/blog/view/28
 #include <iostream>
 #include <string>
 using namespace std;
@@ -16,6 +17,7 @@ int getFibonacci(unsigned long long n) {
 int main() {
 	unsigned long long n;
 	cin >> n;
-	cout << getFibonacci(n);
+	int periodLength = 1500000;
+	cout << getFibonacci(n%periodLength);
 	return 0;
 }
