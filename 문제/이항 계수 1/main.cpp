@@ -10,7 +10,7 @@ int factorial(int n) {
 	return resultN;
 }
 
-int binomialCoefficient(int n, int k) {
+int bino(int n, int k) {
 	return factorial(n) / (factorial(k) * factorial(n-k));
 }
 
@@ -18,7 +18,7 @@ int main() {
 	int n, k;
 	cin >> n >> k;
 
-	int result = binomialCoefficient(n, k);
+	int result = bino(n, k);
 	cout << result;
 
 	return 0;
