@@ -5,6 +5,8 @@
 #include <sstream>
 #include <assert.h>
 #include <map>
+#include <chrono>
+#include <thread>
 using namespace std;
 
 vector<int> v(5);
@@ -18,16 +20,12 @@ void func(int i) {
 }
 
 int main() {
-	map<string, string> m;
-	bool b;
-	 m.insert(pair<string, string>("hat", "a"));
-	m.insert(pair<string, string>("hat", "b"));
-	m.insert(pair<string, string>("h", "c"));
-	m.insert(pair<string, string>("h", "d"));
-	cout << m.size();
-	for (auto iter = m.begin(); iter != m.end(); ++iter){
-
-			cout << (*iter).first << ", " << (*iter).second << endl;
+	char a = 0;
+	
+	while(1){
+		_STL_ASSERT(a != CHAR_MAX, "");
+		cout << (int)a++ << " ";
+		this_thread::sleep_for(chrono::milliseconds(50));
 	}
 
 	return 0;

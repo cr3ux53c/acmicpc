@@ -1,37 +1,32 @@
-//https://www.acmicpc.net/problem/11051
+//https://www.acmicpc.net/problem/6591
 #include <iostream>
 #include <string>
 #include <string.h>
 using namespace std;
 
-int cache[1001][1001];
-
-int binoMemo(int n, int r) {
-	if (r == 0 || n == r) return 1;
-	if (cache[n][r] != -1)
-		return  cache[n][r];
-	return cache[n][r] = (binoMemo(n - 1, r - 1) + binoMemo(n - 1, r));
-}
-
-unsigned long long factorial(unsigned long long n) {
+unsigned long long factorial(int n, int until = 1) {
 	unsigned long long resultN = 1;
-	for (size_t i = 2; i <= n; i++)
+	for (int i = n; i > until; i--) {
 		resultN *= i;
+		//_STL_ASSERT(resultN != ULLONG_MAX, "overflow");
+	}
 	return resultN;
 }
 
-unsigned long long bino(int n, int r) {
-	return factorial(n) / (factorial(r) * factorial(n - r));
+int bino(int n, int r) {
+	if (r > n-r) {
+		return factorial(n, r) / (factorial(n-r));
+	} else {
+		return factorial(n, n-r) / (factorial(r));
+	}
 }
 
 int main() {
 	while (1) {
 		int n, r;
 		cin >> n >> r;
-		if (n == r && r == 0) break;
-
-		unsigned long long result = bino(n, r);
-		cout << result << '\n';
+		if (n == 0 && r == 0) break;
+		cout << bino(n, r) << '\n';
 	}
 
 	return 0;
