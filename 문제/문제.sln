@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "저작권", "저작권\저�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "주차의 신", "주차의 신\주차의 신.vcxproj", "{24A663FF-C467-493F-AA3F-A0B52130DAE5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RGB거리", "RGB거리\RGB거리.vcxproj", "{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -491,6 +493,14 @@ Global
 		{24A663FF-C467-493F-AA3F-A0B52130DAE5}.Release|x64.Build.0 = Release|x64
 		{24A663FF-C467-493F-AA3F-A0B52130DAE5}.Release|x86.ActiveCfg = Release|Win32
 		{24A663FF-C467-493F-AA3F-A0B52130DAE5}.Release|x86.Build.0 = Release|Win32
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Debug|x64.ActiveCfg = Debug|x64
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Debug|x64.Build.0 = Debug|x64
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Debug|x86.ActiveCfg = Debug|Win32
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Debug|x86.Build.0 = Debug|Win32
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Release|x64.ActiveCfg = Release|x64
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Release|x64.Build.0 = Release|x64
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Release|x86.ActiveCfg = Release|Win32
+		{82F5E9F3-18A7-41F6-A73E-2BC40EF17A89}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
