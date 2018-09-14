@@ -2,7 +2,6 @@
 #pragma warning (disable:4996)
 #include <iostream>
 #include <string>
-#include <cmath>
 using namespace std;
 
 int map[1001][3];
