@@ -4,14 +4,14 @@ using namespace std;
 
 int main() {
 
-	int max = 0, number = 0;
+	int result = 0, number = 0;
 	for (int i = 0; i < 10; i++) {
 		int in, out;
 		cin >> out >> in;
 		number -= out;
 		number += in;
-		if (max < number) max = number;
+		if (result < number) result = number;
 	}
-	cout << max;
+	cout << result;
 	return 0;
 }
