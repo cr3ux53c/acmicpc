@@ -4,13 +4,16 @@
 #include <vector>
 using namespace std;
 
+char s[1000001];
+
 int main(int argc, char *argv[]) {
-	string s; cin >> s;
+	cin >> s;
 	vector<int> map(26, 0);
 	
-	for (char ch : s) {
-		int i = toupper(ch);
-		map[i-65]++;
+	for (int i = 0; i < 1000001;i++) {
+		if (s[i] == NULL) break;
+		int idx = toupper(s[i]);
+		map[idx-65]++;
 	}
 
 	int maxNum = -1;
