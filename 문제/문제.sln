@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "알파벳 찾기", "알파�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문자열 반복", "문자열 반복\문자열 반복.vcxproj", "{9B5F6B86-2D49-4C5D-A688-E99D97A78CAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "단어 공부", "단어 공부\단어 공부.vcxproj", "{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -561,6 +563,14 @@ Global
 		{9B5F6B86-2D49-4C5D-A688-E99D97A78CAB}.Release|x64.Build.0 = Release|x64
 		{9B5F6B86-2D49-4C5D-A688-E99D97A78CAB}.Release|x86.ActiveCfg = Release|Win32
 		{9B5F6B86-2D49-4C5D-A688-E99D97A78CAB}.Release|x86.Build.0 = Release|Win32
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Debug|x64.ActiveCfg = Debug|x64
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Debug|x64.Build.0 = Debug|x64
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Debug|x86.ActiveCfg = Debug|Win32
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Debug|x86.Build.0 = Debug|Win32
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Release|x64.ActiveCfg = Release|x64
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Release|x64.Build.0 = Release|x64
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Release|x86.ActiveCfg = Release|Win32
+		{C47797C8-6E27-47A3-868D-58FCDB9CCDF1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
