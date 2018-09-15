@@ -5,9 +5,6 @@
 #include <stack>
 using namespace std;
 
-vector<list<vertex>> adjacentList;
-int n; //N은 1 이상 80 이하이다.
-int idx = 0;
 class vertex {
 public:
 	vector<int> arr;
@@ -20,6 +17,10 @@ public:
 	~vertex() {
 	}
 };
+
+vector<list<vertex>> adjacentList;
+int n; //N은 1 이상 80 이하이다.
+int idx = 0;
 
 void makeAdjacentList(int i) {
 	vector<bool> visited(0);

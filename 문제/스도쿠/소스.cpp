@@ -30,16 +30,6 @@ int* getCandidates(unsigned int c[], unsigned int v[], unsigned int s[]);
 int matrix[9][9];
 POINT emptyPositions[81];
 
-100000000
-010000000 |
-
-110000000
-100000000 &
-
-100000000
-
-
-
 int main() {
 	//ют╥б
 	int input, count = 0;
