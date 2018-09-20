@@ -5,8 +5,8 @@ using namespace std;
 
 int main() {
 
-	int test[10][10];
-	cout << test[-1][-1];
-
+	string s; getline(cin, s);
+	for (auto i : s)
+		cout << (int)i << ", ";
 	return 0;
 }
