@@ -3,7 +3,9 @@
 #include <string>
 using namespace std;
 
-int main(int argc, char *argv[]) {
+int main(int count, char *argv[]) {
+	count = 0;
+	string s; cin >> s;
 
 	return 0;
 }

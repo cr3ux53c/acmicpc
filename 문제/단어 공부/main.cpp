@@ -2,6 +2,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
+#include <map>
+#include <set>
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -12,7 +15,7 @@ int main(int argc, char *argv[]) {
 		int i = toupper(ch);
 		map[i-65]++;
 	}
-
+	
 	int maxNum = -1;
 	int maxIndex = -1;
 	for (int i = 0; i < map.size();i++) {
@@ -27,3 +30,5 @@ int main(int argc, char *argv[]) {
 	cout << (char)(maxIndex+65);
 	return 0;
 }
+
+//ABABCCC
