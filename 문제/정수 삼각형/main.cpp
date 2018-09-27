@@ -1,4 +1,5 @@
 //https://www.acmicpc.net/problem/1932
+//나중에 다시 시도
 #include <iostream>
 #include <string>
 using namespace std;

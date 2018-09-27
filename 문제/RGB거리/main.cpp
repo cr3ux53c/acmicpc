@@ -1,4 +1,5 @@
 //https://www.acmicpc.net/problem/1149
+//나중에 다시 시도
 #pragma warning (disable:4996)
 #include <iostream>
 #include <string>
