@@ -129,6 +129,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "크로아티아 알파벳",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "보글 게임", "보글 게임\보글 게임.vcxproj", "{F663DAE6-5F62-4270-BDA6-C9DA26BD5CAB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "외발 뛰기", "외발 뛰기\외발 뛰기.vcxproj", "{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1로 만들기", "1로 만들기\1로 만들기.vcxproj", "{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -641,6 +645,22 @@ Global
 		{F663DAE6-5F62-4270-BDA6-C9DA26BD5CAB}.Release|x64.Build.0 = Release|x64
 		{F663DAE6-5F62-4270-BDA6-C9DA26BD5CAB}.Release|x86.ActiveCfg = Release|Win32
 		{F663DAE6-5F62-4270-BDA6-C9DA26BD5CAB}.Release|x86.Build.0 = Release|Win32
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Debug|x64.ActiveCfg = Debug|x64
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Debug|x64.Build.0 = Debug|x64
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Debug|x86.Build.0 = Debug|Win32
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Release|x64.ActiveCfg = Release|x64
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Release|x64.Build.0 = Release|x64
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Release|x86.ActiveCfg = Release|Win32
+		{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}.Release|x86.Build.0 = Release|Win32
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Debug|x64.ActiveCfg = Debug|x64
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Debug|x64.Build.0 = Debug|x64
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Debug|x86.Build.0 = Debug|Win32
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x64.ActiveCfg = Release|x64
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x64.Build.0 = Release|x64
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x86.ActiveCfg = Release|Win32
+		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
