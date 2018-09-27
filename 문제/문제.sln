@@ -133,6 +133,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "외발 뛰기", "외발 뛰
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1로 만들기", "1로 만들기\1로 만들기.vcxproj", "{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACM Craft", "ACM Craft\ACM Craft.vcxproj", "{D1E306B2-1EEB-4985-87E1-E64922DB65BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -661,6 +663,14 @@ Global
 		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x64.Build.0 = Release|x64
 		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x86.ActiveCfg = Release|Win32
 		{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}.Release|x86.Build.0 = Release|Win32
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Debug|x64.ActiveCfg = Debug|x64
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Debug|x64.Build.0 = Debug|x64
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Debug|x86.Build.0 = Debug|Win32
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Release|x64.ActiveCfg = Release|x64
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Release|x64.Build.0 = Release|x64
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Release|x86.ActiveCfg = Release|Win32
+		{D1E306B2-1EEB-4985-87E1-E64922DB65BF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
