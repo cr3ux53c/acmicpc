@@ -19,7 +19,6 @@ int main(int argc, char* args[]) {
 			n = a; m = b;
 		} else k = b;
 		for (int i = 0; i < a; i++) {
-			//matrix[AB].push_back(vector<int>(0));
 			for (int j = 0; j < b; j++) {
 				int input; cin >> input;
 				matrix[AB][i][j] = input;
