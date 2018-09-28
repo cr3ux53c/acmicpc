@@ -22,6 +22,7 @@ bool hasWord(int y, int x, string word) {
 			return true;
 		}
 	}
+	return false;
 }
 
 int main(int t, char *argv[]) {
