@@ -12,6 +12,7 @@ vector<vector<int>> result;
 int main(int argc, char* args[]) {
 	//init
 	int n, m, k;
+
 	//input
 	for (int AB = A; AB <= B; AB++) { //matrix A, B ÃÑ µÎ¹ø µ¿¾È
 		int a, b; cin >> a >> b;
@@ -25,9 +26,9 @@ int main(int argc, char* args[]) {
 			}
 		}
 	}
+
 	//calc
 	result = vector<vector<int>>(n, vector<int>(k));
-
 	for (int iii = 0; iii < n; iii++) {
 		for (int ii = 0; ii < k; ii++) {
 			int sum = 0;
@@ -36,6 +37,7 @@ int main(int argc, char* args[]) {
 			result[iii][ii] = sum;
 		}
 	}
+
 	//output
 	for (auto i : result) {
 		for (auto j : i)
