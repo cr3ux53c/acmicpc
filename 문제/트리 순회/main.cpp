@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <map>
+#include <typeinfo>
 using namespace std;
 
 int n;
@@ -36,6 +37,8 @@ void postorder(char ch) {
 int main(int argc, char* argv[]) { 
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	
+	//cout << typeid(preorder).name();
+	
 	//input
 	cin >> n;
 	for (int i = 0; i < n; i++) {
@@ -47,9 +50,9 @@ int main(int argc, char* argv[]) {
 	}
 
 	//calc
-	vector<void*> funcA = { preorder, inorder, postorder };
+	vector<void(*)(char)> funcArr = { preorder, inorder, postorder };
 	void(*order)(char);
-	for (auto f : funcA) {
+	for (auto f : funcArr) {
 		order = (void(*)(char))f;
 		order('A'); cout << '\n';
 	}
