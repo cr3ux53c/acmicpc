@@ -10,76 +10,37 @@
 using namespace std;
 
 int n;
-vector<pair<char, pair<char, char>>> matrix;
 map<char, pair<char, char>> m;
 
-
-void preorderTraversal(int index) {
-	auto i = m['A'];
-	stack<char> st;
-	st.push('A');
-	while (!st.empty()) {
-		cout << st.top(); st.pop();
-		if (i.first != '.') {
-			cout << i.first;
-			if (i.second != '.') st.push(i.second);
-			i = m[i.first];
-			continue;
-		}
-		if (i.second != '.') {
-			cout << i.second;
-			i = m[i.second];
-			continue;
-		}
-		i = m[st.top()]; st.pop();
-	}
-	
-	//
-	//auto edge = matrix[index];
-	//for (auto it = edge.begin(); it != edge.end(); it++) {
-	//	if (it == edge.begin()) {
-	//		cout << *it;
-	//	} else if (*it != '.') {
-	//		int nextIndex;
-	//		for (int i = 0; i < n; i++) {
-	//			if (*matrix[i].begin() == *it){
-	//				nextIndex = i;
-	//				break;
-	//			}
-	//		}
-	//		preorderTraversal(nextIndex);
-	//	} else
-	//		continue;
-	//}
+void preorder(char ch) {
+	cout << ch;
+	if (m[ch].first != '.')
+		preorder(m[ch].first);
+	if (m[ch].second != '.')
+		preorder(m[ch].second);
 }
-//
-//void inorderTraversal(int index) {
-//	auto edge = matrix[index];
-//	for (auto it = edge.begin(); it != edge.end(); it++) {
-//		if (it == edge.end()) {
-//			cout << *it;
-//		} else if (*it != '.') {
-//			int nextIndex;
-//			for (int i = 0; i < n; i++) {
-//				if (*matrix[i].begin() == *it) {
-//					nextIndex = i;
-//					break;
-//				}
-//			}
-//			inorderTraversal(nextIndex);
-//		} else // '.'
-//			continue;
-//	}
-//}
+
+void inorder(char ch) {
+	if (m[ch].first != '.')
+		inorder(m[ch].first);
+	cout << ch;
+	if (m[ch].second != '.')
+		inorder(m[ch].second);
+}
+
+void postorder(char ch) {
+	if (m[ch].first != '.')
+		postorder(m[ch].first);
+	if (m[ch].second != '.')
+		postorder(m[ch].second);
+	cout << ch;
+}
 
 int main(int argc, char* argv[]) { 
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	
 	//input
-	
-	pair<char, char> a = pair<char, char>();
 	cin >> n;
-	matrix = vector<pair<char, pair<char, char>>>(n, pair<char, pair<char, char>>());
 	for (int i = 0; i < n; i++) {
 		char ch[3];
 		for (int j = 0; j < 3; j++)
@@ -89,8 +50,9 @@ int main(int argc, char* argv[]) {
 	}
 
 	//calc
-	preorderTraversal(0);
-	cout << "\n";
+	preorder('A'); cout << '\n';
+	inorder('A'); cout << '\n';
+	postorder('A');
 	
 	return 0;
 }
