@@ -47,10 +47,10 @@ int main(int argc, char* argv[]) {
 	}
 
 	//calc
-	void* funcArr[] = { preorder, inorder, postorder };
+	vector<void*> funcA = { preorder, inorder, postorder };
 	void(*order)(char);
-	for (int i = 0; i < 3; i++) {
-		order = (void(*)(char))funcArr[i];
+	for (auto f : funcA) {
+		order = (void(*)(char))f;
 		order('A'); cout << '\n';
 	}
 	
