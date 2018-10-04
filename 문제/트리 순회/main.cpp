@@ -2,11 +2,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <list>
 #include <algorithm>
-#include <set>
 #include <map>
-#include <stack>
 using namespace std;
 
 int n;
@@ -50,9 +47,12 @@ int main(int argc, char* argv[]) {
 	}
 
 	//calc
-	preorder('A'); cout << '\n';
-	inorder('A'); cout << '\n';
-	postorder('A');
+	void* funcArr[] = { preorder, inorder, postorder };
+	void(*order)(char);
+	for (int i = 0; i < 3; i++) {
+		order = (void(*)(char))funcArr[i];
+		order('A'); cout << '\n';
+	}
 	
 	return 0;
 }
