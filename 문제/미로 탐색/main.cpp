@@ -17,7 +17,7 @@ int main(int argc, char* argv[]) {
 	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 
 	//input
-	int n, m;
+	int n, m, result = INT32_MAX;
 	cin >> n >> m;
 	vector<vector<int>> map(n, vector<int>(m));
 	for (int i = 0; i < n; i++) {
@@ -32,9 +32,15 @@ int main(int argc, char* argv[]) {
 	while (st.empty() == false) {
 		auto pos = st.top(); st.pop();
 
+		//baseCase
+		if (map[pos.first][pos.second] == 0)
+			continue;
 		if (pos.first == n-1 && pos.second == m-1) {
-			cout << map[pos.first][pos.second];
-			break;
+			result = min(result, map[pos.first][pos.second]);
+			/*if (st.empty() == false)
+				continue;
+			else
+				break;*/
 		}
 
 		//µ¿¼­³²ºÏ
@@ -56,5 +62,11 @@ int main(int argc, char* argv[]) {
 		map[pos.first][pos.second] = 0;
 	}
 
+	cout << result;
 	return 0;
 }
+
+//3 5
+//10111
+//11101
+//00111
