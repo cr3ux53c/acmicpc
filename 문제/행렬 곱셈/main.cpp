@@ -10,6 +10,8 @@ vector<vector<vector<int>>> matrix(100, vector<vector<int>>(100, vector<int>(100
 vector<vector<int>> result;
 
 int main(int argc, char* args[]) {
+	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
 	//init
 	int n, m, k;
 
