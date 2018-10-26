@@ -4,6 +4,7 @@
 #include <vector>
 #include <algorithm>
 #include <list>
+#include <deque>
 using namespace std;
 
 enum {U, V, W};
@@ -17,26 +18,33 @@ int main(int argc, char* argv[]) {
 
 	for (int i = 0; i < e; i++) {
 		int u, v, w; cin >> u >> v >> w;
+		if (v == k) continue;
 		adjList[i][U] = u;
 		adjList[i][V] = v;
 		adjList[i][W] = w;
 	}
 
-	int start = k;
-	int result = 0;
+	comulativeWeight[k-1] = 0;
+	deque<int> q;
+	q.push_back(k);
+	
+	while (!q.empty()) {
+		int start = q.front(); q.pop_front();
 
-	for (int i = 0; i < e; i++) {
-
-		if (adjList[i][U] == start) {
-			comulativeWeight[adjList[i][V]-1] = min(adjList[i][W], comulativeWeight[adjList[i][V]]);
+		for (int i = 0; i < e; i++) {
+			if (adjList[i][U] == start) {
+				q.push_back(adjList[i][V]);
+				comulativeWeight[adjList[i][V]-1] = min(comulativeWeight[start-1] + adjList[i][W], comulativeWeight[adjList[i][V] - 1]);
+			}
 		}
-		
-		if (comulativeWeight[i] == INT32_MAX)
-			if (i == 0) cout << "0\n";
-			else cout << "INF\n";
-		else
-			cout << comulativeWeight[i] << "\n";
 	}
+
+	//output
+	for (int i = 0; i < comulativeWeight.size(); i++) 
+		if (comulativeWeight[i] == INT32_MAX)
+			cout << "INF\n";
+		else
+			cout << comulativeWeight[i] << '\n';
 
 	return 0;
 }
