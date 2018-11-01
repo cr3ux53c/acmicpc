@@ -33,7 +33,9 @@ int main(int argc, char* argv[]) {
 
 		for (int i = 0; i < e; i++) {
 			if (adjList[i][U] == start) {
-				q.push_back(adjList[i][V]);
+				if (find(q.begin(), q.end(), adjList[i][V]) == q.end()) {
+					q.push_back(adjList[i][V]);
+				}
 				comulativeWeight[adjList[i][V]-1] = min(comulativeWeight[start-1] + adjList[i][W], comulativeWeight[adjList[i][V] - 1]);
 			}
 		}
