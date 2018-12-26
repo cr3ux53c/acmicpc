@@ -27,6 +27,7 @@ int main(int testCases, char* argv[]) {
 				case '-':
 					if (pos > 0) {
 						output.erase(pos-1, 1);
+						pos--;
 					}
 					break;
 				default:
