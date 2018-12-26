@@ -6,12 +6,14 @@
 using namespace std;
 
 int main(int argc, char* argv[]) {
+	ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+
 	int n;
 	vector<int> list = vector<int>(10000, 0);
 
 	cin >> n;
-	for (short i = 0; i < n; i++) {
-		short input; cin >> input;
+	for (int i = 0; i < n; i++) {
+		int input; cin >> input;
 		list[input - 1]++;
 	}
 
