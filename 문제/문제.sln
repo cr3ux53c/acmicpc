@@ -159,6 +159,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "수 정렬하기 3", "수 �
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "단어 정렬", "단어 정렬\단어 정렬.vcxproj", "{3B814FFA-5310-478B-B796-867695C786DB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "윷놀이", "윷놀이\윷놀이.vcxproj", "{27FE7779-5E87-4069-BA19-AC132E3D3E3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -791,6 +793,14 @@ Global
 		{3B814FFA-5310-478B-B796-867695C786DB}.Release|x64.Build.0 = Release|x64
 		{3B814FFA-5310-478B-B796-867695C786DB}.Release|x86.ActiveCfg = Release|Win32
 		{3B814FFA-5310-478B-B796-867695C786DB}.Release|x86.Build.0 = Release|Win32
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Debug|x64.ActiveCfg = Debug|x64
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Debug|x64.Build.0 = Debug|x64
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Debug|x86.ActiveCfg = Debug|Win32
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Debug|x86.Build.0 = Debug|Win32
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Release|x64.ActiveCfg = Release|x64
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Release|x64.Build.0 = Release|x64
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Release|x86.ActiveCfg = Release|Win32
+		{27FE7779-5E87-4069-BA19-AC132E3D3E3A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
