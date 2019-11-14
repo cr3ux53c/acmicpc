@@ -171,6 +171,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "두 수 비교하기", "두
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "윤년", "윤년\윤년.vcxproj", "{07C497DB-F472-4096-9291-EA5565C9DB61}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "알람 시계", "알람 시계\알람 시계.vcxproj", "{BB637917-4C2B-4BB8-B7F6-C350DAD08986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -851,6 +853,14 @@ Global
 		{07C497DB-F472-4096-9291-EA5565C9DB61}.Release|x64.Build.0 = Release|x64
 		{07C497DB-F472-4096-9291-EA5565C9DB61}.Release|x86.ActiveCfg = Release|Win32
 		{07C497DB-F472-4096-9291-EA5565C9DB61}.Release|x86.Build.0 = Release|Win32
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Debug|x64.ActiveCfg = Debug|x64
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Debug|x64.Build.0 = Debug|x64
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Debug|x86.ActiveCfg = Debug|Win32
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Debug|x86.Build.0 = Debug|Win32
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Release|x64.ActiveCfg = Release|x64
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Release|x64.Build.0 = Release|x64
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Release|x86.ActiveCfg = Release|Win32
+		{BB637917-4C2B-4BB8-B7F6-C350DAD08986}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
