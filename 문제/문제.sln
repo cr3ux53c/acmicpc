@@ -181,6 +181,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A+B - 8", "A+B - 8\A+B - 8.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A+B - 5", "A+B - 5\A+B - 5.vcxproj", "{69B09705-E7BE-4A04-A766-03317F0EEDCE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A+B - 4", "A+B - 4\A+B - 4.vcxproj", "{CADB6629-2CB1-42B3-811E-E1CF3A17B851}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -901,6 +903,14 @@ Global
 		{69B09705-E7BE-4A04-A766-03317F0EEDCE}.Release|x64.Build.0 = Release|x64
 		{69B09705-E7BE-4A04-A766-03317F0EEDCE}.Release|x86.ActiveCfg = Release|Win32
 		{69B09705-E7BE-4A04-A766-03317F0EEDCE}.Release|x86.Build.0 = Release|Win32
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Debug|x64.ActiveCfg = Debug|x64
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Debug|x64.Build.0 = Debug|x64
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Debug|x86.ActiveCfg = Debug|Win32
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Debug|x86.Build.0 = Debug|Win32
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x64.ActiveCfg = Release|x64
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x64.Build.0 = Release|x64
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x86.ActiveCfg = Release|Win32
+		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
