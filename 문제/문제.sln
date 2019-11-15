@@ -3,25 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "로봇 청소기-C++14", "로봇 청소기-C++14-C++14\로봇 청소기-C++14.vcxproj", "{A1B2264A-F3FD-432E-A894-3F476A83A779}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "로봇 청소기-C++14", "로봇 청소기-C++14\로봇 청소기-C++14.vcxproj", "{A1B2264A-F3FD-432E-A894-3F476A83A779}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "키로거-C++14", "키로거-C++14-C++14\키로거-C++14.vcxproj", "{28124B63-48E3-4DF5-A73B-6A769C4BB611}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "키로거-C++14", "키로거-C++14\키로거-C++14.vcxproj", "{28124B63-48E3-4DF5-A73B-6A769C4BB611}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스도쿠 (보류)-C++14", "스도쿠-C++14-C++14\스도쿠-C++14.vcxproj", "{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스도쿠 (보류)", "스도쿠-C++14\스도쿠-C++14.vcxproj", "{CBB980C4-0765-42B7-98E5-36DFFF0ECD39}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호-C++14", "괄호-C++14-C++14\괄호-C++14.vcxproj", "{0A066465-694E-440B-BA49-992A959119DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호-C++14", "괄호-C++14\괄호-C++14.vcxproj", "{0A066465-694E-440B-BA49-992A959119DA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호의 값-C++14", "괄호의 값-C++14-C++14\괄호의 값-C++14.vcxproj", "{DC840766-53B1-4DA6-BB0C-4FEE7533B41E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "괄호의 값-C++14", "괄호의 값-C++14\괄호의 값-C++14.vcxproj", "{DC840766-53B1-4DA6-BB0C-4FEE7533B41E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test-C++14-C++14\test-C++14.vcxproj", "{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택 수열-C++14", "스택 수열-C++14\스택 수열-C++14.vcxproj", "{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택 수열-C++14", "스택 수열-C++14-C++14\스택 수열-C++14.vcxproj", "{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "큐-C++14", "큐-C++14\큐-C++14.vcxproj", "{9F4514FC-6B06-44E4-964A-5BFEAE349E53}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "큐-C++14", "큐-C++14-C++14\큐-C++14.vcxproj", "{9F4514FC-6B06-44E4-964A-5BFEAE349E53}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DFS와 BFS-C++14", "DFS와 BFS-C++14\DFS와 BFS-C++14.vcxproj", "{CD045EEF-AE19-416E-A82D-5536BB0560C4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DFS와 BFS-C++14", "DFS와 BFS-C++14-C++14\DFS와 BFS-C++14.vcxproj", "{CD045EEF-AE19-416E-A82D-5536BB0560C4}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "좋은수열 (보류)-C++14", "좋은수열-C++14\좋은수열-C++14.vcxproj", "{DEA9401F-6E24-44D6-9BE7-225493FE75C1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "좋은수열 (보류)", "좋은수열-C++14\좋은수열-C++14.vcxproj", "{DEA9401F-6E24-44D6-9BE7-225493FE75C1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "프린터 큐-C++14", "프린터 큐-C++14\프린터 큐-C++14.vcxproj", "{FB24CD92-208D-4B9C-92C9-1FA8F7BE2E24}"
 EndProject
@@ -33,7 +31,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "회전하는 큐-C++14", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AC-C++14", "AC-C++14\AC-C++14.vcxproj", "{C5B24FA7-C07F-4EA2-ACDE-46061670DD1B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택-C++14", "스택-C++14\스택 사용하기 (기초)-C++14.vcxproj", "{F0A1B627-CD06-4BE7-A359-70E861669FFA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스택", "스택-C++14\스택 사용하기 (기초)-C++14.vcxproj", "{F0A1B627-CD06-4BE7-A359-70E861669FFA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "셀프 넘버-C++14", "셀프 넘버-C++14\셀프 넘버-C++14.vcxproj", "{568EE152-4F38-4E99-8A9F-FB3BECFFEBFE}"
 EndProject
@@ -131,7 +129,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "보글 게임-C++14", "보�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "외발 뛰기-C++14", "외발 뛰기-C++14\외발 뛰기-C++14.vcxproj", "{8F4AE77E-4F78-40E4-9D8B-728BD3AB28BD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1로 만들기-C++14", "1로 만들기-C++14-C++14\1로 만들기-C++14-C++14.vcxproj", "{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1로 만들기-C++14", "1로 만들기-C++14\1로 만들기-C++14.vcxproj", "{BC128F0D-039C-4711-8EE3-C6EAD65FF69F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ACM Craft-C++14", "ACM Craft-C++14\ACM Craft-C++14.vcxproj", "{D1E306B2-1EEB-4985-87E1-E64922DB65BF}"
 EndProject
@@ -183,7 +181,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A+B - 5-C++14", "A+B - 5-C+
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "A+B - 4-C++14", "A+B - 4-C++14\A+B - 4-C++14.vcxproj", "{CADB6629-2CB1-42B3-811E-E1CF3A17B851}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1-C++14\PythonApplication1.pyproj", "{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OX퀴즈-C++14", "OX퀴즈-C++14\OX퀴즈-C++14.vcxproj", "{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "단어의 개수-C++14", "단어의 개수-C++14\단어의 개수-C++14.vcxproj", "{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "숫자의 개수-C++14", "숫자의 개수-C++14\숫자의 개수-C++14.vcxproj", "{1BAD510F-D343-4A52-9395-2C00A94342BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "음계-C++14", "음계-C++14\음계-C++14.vcxproj", "{C0CD6EA3-38BC-43F4-9402-393E91DDC618}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -245,16 +249,6 @@ Global
 		{DC840766-53B1-4DA6-BB0C-4FEE7533B41E}.Release|x64.Build.0 = Release|x64
 		{DC840766-53B1-4DA6-BB0C-4FEE7533B41E}.Release|x86.ActiveCfg = Release|Win32
 		{DC840766-53B1-4DA6-BB0C-4FEE7533B41E}.Release|x86.Build.0 = Release|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Debug|x64.ActiveCfg = Debug|x64
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Debug|x64.Build.0 = Debug|x64
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Debug|x86.ActiveCfg = Debug|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Debug|x86.Build.0 = Debug|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|Any CPU.ActiveCfg = Release|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x64.ActiveCfg = Release|x64
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x64.Build.0 = Release|x64
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x86.ActiveCfg = Release|Win32
-		{56678ACD-52A8-42E2-B0C0-47A09F41BDB3}.Release|x86.Build.0 = Release|Win32
 		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x64.ActiveCfg = Debug|x64
 		{EDD558F9-2BDA-4079-9AE5-3318BB424E8F}.Debug|x64.Build.0 = Debug|x64
@@ -1095,12 +1089,46 @@ Global
 		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x64.Build.0 = Release|x64
 		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x86.ActiveCfg = Release|Win32
 		{CADB6629-2CB1-42B3-811E-E1CF3A17B851}.Release|x86.Build.0 = Release|Win32
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Release|x64.ActiveCfg = Release|Any CPU
-		{61DD52D9-5ABB-45E6-8B31-16F4FAC6B6BC}.Release|x86.ActiveCfg = Release|Any CPU
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Debug|x64.ActiveCfg = Debug|x64
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Debug|x64.Build.0 = Debug|x64
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Debug|x86.ActiveCfg = Debug|Win32
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Debug|x86.Build.0 = Debug|Win32
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Release|Any CPU.ActiveCfg = Release|Win32
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Release|x64.ActiveCfg = Release|x64
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Release|x64.Build.0 = Release|x64
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Release|x86.ActiveCfg = Release|Win32
+		{05AEC7B4-D1B6-4261-89F5-BB09AB6D3047}.Release|x86.Build.0 = Release|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Debug|x64.ActiveCfg = Debug|x64
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Debug|x64.Build.0 = Debug|x64
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Debug|x86.ActiveCfg = Debug|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Debug|x86.Build.0 = Debug|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Release|x64.ActiveCfg = Release|x64
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Release|x64.Build.0 = Release|x64
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Release|x86.ActiveCfg = Release|Win32
+		{2C697C54-3CE6-4F91-8EBD-CF55E7B6D43B}.Release|x86.Build.0 = Release|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Debug|x64.ActiveCfg = Debug|x64
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Debug|x64.Build.0 = Debug|x64
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Debug|x86.ActiveCfg = Debug|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Debug|x86.Build.0 = Debug|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Release|x64.ActiveCfg = Release|x64
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Release|x64.Build.0 = Release|x64
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Release|x86.ActiveCfg = Release|Win32
+		{1BAD510F-D343-4A52-9395-2C00A94342BC}.Release|x86.Build.0 = Release|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Debug|x64.ActiveCfg = Debug|x64
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Debug|x64.Build.0 = Debug|x64
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Debug|x86.Build.0 = Debug|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Release|x64.ActiveCfg = Release|x64
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Release|x64.Build.0 = Release|x64
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Release|x86.ActiveCfg = Release|Win32
+		{C0CD6EA3-38BC-43F4-9402-393E91DDC618}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
