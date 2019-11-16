@@ -193,6 +193,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "We love kriii-py3", "We lov
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "고양이-py3", "고양이-py3\고양이-py3.pyproj", "{45FF2742-2992-4878-8896-A333465F5525}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "최소, 최대-cpp14", "최소, 최대-cpp14\최소, 최대-cpp14.vcxproj", "{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1145,6 +1147,16 @@ Global
 		{45FF2742-2992-4878-8896-A333465F5525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45FF2742-2992-4878-8896-A333465F5525}.Release|x64.ActiveCfg = Release|Any CPU
 		{45FF2742-2992-4878-8896-A333465F5525}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Debug|x64.ActiveCfg = Debug|x64
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Debug|x64.Build.0 = Debug|x64
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Debug|x86.ActiveCfg = Debug|Win32
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Debug|x86.Build.0 = Debug|Win32
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Release|x64.ActiveCfg = Release|x64
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Release|x64.Build.0 = Release|x64
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Release|x86.ActiveCfg = Release|Win32
+		{DFDEF081-0D0C-4D80-B4D7-0688F3E389C0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
