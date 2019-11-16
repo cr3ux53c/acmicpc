@@ -16,12 +16,15 @@ int main(int argc, char* argv[]) {
 		return 0;
 	}
 
-	for (int i = 1;; i++) {
-		if (A + B * i < C * i) {
+	cout << (A / (C - B) + 1);
+
+	/*for (int i = 1;; i++) {
+		if ((C-B)*i > A) {
 			cout << i;
 			return 0;
 		}
-	}
+	}*/
+
 
 	return 0;
 }
